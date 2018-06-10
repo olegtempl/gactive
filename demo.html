@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+<link rel="stylesheet" href="src/github-activity.css">
+
+<script src="//code.jquery.com/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="src/github-activity.js"></script>
+<script>
+  
+       GitHubActivity.feed({
+	username: "diglabby",
+	eventsUrl: "http://localhost/handler.php",
+	selector: "#feed",
+	limit: 20 // optional
+  
+});
+  
+</script>
+<style>
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    padding: 20px;
+    font-family: 'Helvetica', 'Arial';
+  }
+
+  #feed {
+    width: 700px;
+    height: 600px;
+    margin: 30px 0;
+  }
+</style>
+</head>
+<body>
+<input type="text" id="username" placeholder="GitHub Username" />
+<button id="update">Update</button>
+<div id="feed"><img style="margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)" src="https://habrastorage.org/storage2/729/f3a/141/729f3a141f86debe47d6357fb1d57ae3.gif"></div>
+</body>
+</html
